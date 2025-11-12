@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Input Gaji Karyawan Berdasarkan Golongan</title>
+</head>
+<body>
+    <h1>Input Gaji Karyawan Berdasarkan Golongan</h1>
+    <form method="post" action="latihansoal3proses.php">
+        
+        <label for="jam_kerja">Masukkan Jumlah Jam Kerja (per minggu):</label>
+        <input type="text" name="jam_kerja" id="jam_kerja" required>
+        <br><br>
+
+        <label for="golongan">Pilih Golongan Karyawan:</label>
+        <select name="golongan" id="golongan" required>
+            <option value="">-- Pilih Golongan --</option>
+            <option value="A">Golongan A (Rp 4.000,-/jam)</option>
+            <option value="B">Golongan B (Rp 5.000,-/jam)</option>
+            <option value="C">Golongan C (Rp 6.000,-/jam)</option>
+            <option value="D">Golongan D (Rp 7.500,-/jam)</option>
+        </select>
+        <input type="submit" name="submit" value="Hitung Upah"> <input type="reset" name="reset" value="hapus">
+    </form>
+</body>
+</html>
